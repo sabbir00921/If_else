@@ -1,20 +1,27 @@
-//Leap year check
-const year = 2025; // Assin the valu here
+//Leap year check 
+// here is the code using 3 types of function.
+
+const year = 2024; // Assin the valu here
+const yearArr = [2024, 3526, 6544, 6540, 7987, 6546,]; // Assin the valu here
 
 //
+console.log("Normal Function Output")
 function leapYear(year) {
-    if (year % 4 == 0) {
-        leap = console.log(`${year} is a leap year`);
-    }
-    else {
-        leap = console.log(`${year} is not a leap year`);
+    for (let i = 0; i < yearArr.length - 1; i++) {
+        if (year[i] % 4 == 0) {
+            leap = console.log(`${year[i]} is a leap year`);
+        }
+        else {
+            leap = console.log(`${year[i]} is not a leap year`);
+        }
     }
     return leap;
 }
-leapYear(year)
+leapYear(yearArr)
 
-//aerrow function
-leapYear = (year)=> {
+// //aerrow function
+console.log("aerrow Function Output")
+leapYear = (year) => {
     if (year % 4 == 0) {
         leap = console.log(`${year} is a leap year`);
     }
@@ -26,7 +33,8 @@ leapYear = (year)=> {
 leapYear(year)
 
 //annoynimous function
-leapYear = function(year) {
+console.log("annoynimous Function Output")
+leapYear = function (year) {
     if (year % 4 == 0) {
         leap = console.log(`${year} is a leap year`);
     }
