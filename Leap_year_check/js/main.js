@@ -1,7 +1,7 @@
 //Leap year check 
 // here is the code using 3 types of function.
 
-const year = 2024; // Assin the valu here
+const year = prompt("Enter a year to check leap year or not") // Assin the valu here
 const yearArr = [2024, 3526, 6544, 6540, 7987, 6546,]; // Assin the valu here
 
 //
